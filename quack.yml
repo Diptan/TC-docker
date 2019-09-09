@@ -1,0 +1,12 @@
+version: '2'
+services:
+    image: greatbit/quack
+    ports:
+      - "80:80"
+    links:
+      - mongo
+      -
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
